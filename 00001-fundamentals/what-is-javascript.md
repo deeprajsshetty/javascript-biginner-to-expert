@@ -81,18 +81,22 @@ Parser → AST → Interpreter → Bytecode → Optimizer → Machine Code
 ## Dynamic Typing
 JavaScript is **dynamically typed**, meaning variable types are decided at runtime.
 
+```javascript
 let x = 42;     // number
 x = "Hello JS"; // string
+```
 
 ## Weak Typing
 JavaScript is weakly typed, meaning type coercion happens automatically.  JS converts types when needed.
 
+```javascript
 console.log(5 + "5");   // "55"  (number → string)
 console.log("5" * 2);   // 10    (string → number)
+```
 
 ## ⚠️ Implications
-Pros: Flexibility, faster prototyping
-Cons: Unexpected bugs due to coercion
+- Pros: Flexibility, faster prototyping
+- Cons: Unexpected bugs due to coercion
 
 ---
 
@@ -107,14 +111,19 @@ JavaScript does not run alone – it requires a **host environment** like a **br
 - Enables DOM Manipulation and Events
 
 Example:
+
+```javascript
 document.getElementById("demo").innerText = "Hello, Browser!";
+```
 
 ## 🖥️ Node.js Environment
 - Provides APIs: fs, http, os, process
 - Enables server-side programming
 
+```Node
 const fs = require("fs");
 fs.writeFileSync("hello.txt", "Hello Node.js");
+```
 
 📊 Diagram: JS Host Environment
 
