@@ -54,8 +54,6 @@ Hello, JavaScript!
 - [ECMAScript Specification](https://tc39.es/ecma262/)
 - [JavaScript.info](https://javascript.info/)
 
-
-```markdown
 # How JavaScript is Executed?
 
 JavaScript is executed in **JavaScript Engines** embedded inside browsers (e.g., V8 in Chrome, SpiderMonkey in Firefox).
@@ -76,7 +74,6 @@ Parser → AST → Interpreter → Bytecode → Optimizer → Machine Code
 
 ---
 
-```markdown
 # Dynamic vs Weakly Typed in JavaScript
 
 ---
@@ -84,14 +81,12 @@ Parser → AST → Interpreter → Bytecode → Optimizer → Machine Code
 ## Dynamic Typing
 JavaScript is **dynamically typed**, meaning variable types are decided at runtime.
 
-```javascript
 let x = 42;     // number
 x = "Hello JS"; // string
 
 ## Weak Typing
 JavaScript is weakly typed, meaning type coercion happens automatically.  JS converts types when needed.
 
-```javascript
 console.log(5 + "5");   // "55"  (number → string)
 console.log("5" * 2);   // 10    (string → number)
 
@@ -101,7 +96,6 @@ Cons: Unexpected bugs due to coercion
 
 ---
 
-```markdown
 # JavaScript Host Environment
 
 JavaScript does not run alone – it requires a **host environment** like a **browser** or **Node.js**.
@@ -113,14 +107,12 @@ JavaScript does not run alone – it requires a **host environment** like a **br
 - Enables DOM Manipulation and Events
 
 Example:
-```javascript
 document.getElementById("demo").innerText = "Hello, Browser!";
 
 ## 🖥️ Node.js Environment
 - Provides APIs: fs, http, os, process
 - Enables server-side programming
 
-```Node
 const fs = require("fs");
 fs.writeFileSync("hello.txt", "Hello Node.js");
 
